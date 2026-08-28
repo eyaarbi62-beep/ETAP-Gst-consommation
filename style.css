@@ -1,0 +1,32 @@
+body { background:#f4f6f9; }
+
+.sidebar {
+    width: 230px; height: 100vh; background:#0d1b2a; position:fixed; top:0; left:0;
+    padding-top: 20px; color:#fff; overflow-y:auto;
+}
+.sidebar .brand { padding: 0 20px 20px 20px; border-bottom:1px solid #1b2b3a; text-align:center; }
+.sidebar .brand img { max-width: 90px; height:auto; }
+.sidebar a { display:block; padding:12px 20px; color:#b0bec5; text-decoration:none; font-size:0.92rem; }
+.sidebar a:hover, .sidebar a.active { background:#16283b; color:#fff; border-left:3px solid #2979ff; }
+.sidebar .section-label {
+    padding: 16px 20px 6px 20px; font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:#546e7a;
+}
+
+.content { margin-left:230px; padding: 30px; }
+
+.stat-card { border:none; border-radius:14px; color:#fff; padding:20px; }
+.stat-card .label { font-size:0.8rem; opacity:0.85; letter-spacing:0.5px; text-transform:uppercase; }
+.stat-card .value { font-size:1.7rem; font-weight:700; margin-top:6px; }
+.bg-elec { background: linear-gradient(135deg,#ff9800,#f57c00); }
+.bg-gaz { background: linear-gradient(135deg,#9c27b0,#7b1fa2); }
+.bg-eau { background: linear-gradient(135deg,#00bcd4,#0097a7); }
+
+.mini-card { border:none; border-radius:14px; background:#fff; padding:20px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+
+@media (max-width: 767px) {
+    .sidebar { width: 70px; }
+    .sidebar .brand img { max-width:40px; }
+    .sidebar a { padding:12px 8px; text-align:center; font-size:0.7rem; }
+    .sidebar a i { display:block; font-size:1.1rem; margin-bottom:2px; }
+    .content { margin-left:70px; }
+}
